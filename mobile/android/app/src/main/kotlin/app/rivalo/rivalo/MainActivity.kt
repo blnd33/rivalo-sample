@@ -1,0 +1,5 @@
+package app.rivalo.rivalo
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()

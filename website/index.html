@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- =========================================================
+       PAGE METADATA
+       No canonical / og:url is set on purpose: add them once the
+       real website address is confirmed.
+       ========================================================= -->
+  <title>RIVALO — Coming Soon · Play. Win. Rise.</title>
+  <meta name="description" content="RIVALO is an upcoming multi-sport tournament and player-ranking app for football, padel, cue sports, and e-sports. Planned for Android and iPhone. Coming soon.">
+  <meta name="theme-color" content="#0B1020">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RIVALO — Coming Soon">
+  <meta property="og:description" content="Your game. Your rival. A multi-sport tournament and ranking app — coming soon to Android and iPhone.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1020'/%3E%3Cpath d='M17 8 L32 52 L47 8' fill='none' stroke='%23C7FF3D' stroke-width='10' stroke-linejoin='miter'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Flags that JavaScript is running, so reveal animations never hide content when JS is off. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- =========================================================
+       SVG SPRITE — wordmark + icons, defined once, reused via <use>.
+       All graphics are original and stored locally.
+       ========================================================= -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <!-- RIVALO wordmark: monoline geometric letters, the V in electric lime -->
+    <symbol id="wordmark" viewBox="0 0 232 44">
+      <g fill="none" stroke="currentColor" stroke-width="8" stroke-linejoin="miter" stroke-linecap="butt">
+        <path d="M4 48 V4 H18 A10 10 0 0 1 18 24 H4 M17 24 L32 48"/>
+        <path d="M46 -4 V48"/>
+        <path d="M110 48 L126 0 L142 48 M115 31 H137"/>
+        <path d="M157 -4 V40 H178"/>
+        <circle cx="208" cy="22" r="18"/>
+      </g>
+      <path d="M62 -4 L78 44 L94 -4" fill="none" stroke-width="8" stroke-linejoin="miter" style="stroke: var(--wordmark-accent, #C7FF3D)"/>
+    </symbol>
+
+    <!-- Sport icons (24px grid, 1.75 stroke) -->
+    <symbol id="i-football" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M12 8.2 15.6 10.8 14.2 15H9.8L8.4 10.8Z"/>
+        <path d="M12 8.2V3M15.6 10.8l4.9-1.5M14.2 15l3 4.2M9.8 15l-3 4.2M8.4 10.8 3.5 9.3"/>
+      </g>
+    </symbol>
+    <symbol id="i-padel" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="12" cy="8.6" rx="6.2" ry="6.8"/>
+        <path d="M9.4 14.6 11 17.6h2l1.6-3"/>
+        <path d="M11 17.6v3.9M13 17.6v3.9"/>
+      </g>
+      <g fill="currentColor">
+        <circle cx="10" cy="6.4" r=".85"/><circle cx="14" cy="6.4" r=".85"/>
+        <circle cx="12" cy="8.8" r=".85"/>
+        <circle cx="10" cy="11.1" r=".85"/><circle cx="14" cy="11.1" r=".85"/>
+      </g>
+    </symbol>
+    <symbol id="i-cue" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8.5" cy="15.5" r="5.5"/>
+        <circle cx="8.5" cy="15.5" r="2.1"/>
+        <path d="M14.6 9.4 21 3"/>
+        <path d="M17.2 3.6 20.4 6.8" opacity=".55"/>
+      </g>
+    </symbol>
+    <symbol id="i-esports" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7.2 7.5h9.6a4.2 4.2 0 0 1 4.1 3.3l1 4.7a2.6 2.6 0 0 1-4.5 2.3l-1.8-2h-7.2l-1.8 2a2.6 2.6 0 0 1-4.5-2.3l1-4.7a4.2 4.2 0 0 1 4.1-3.3Z"/>
+        <path d="M7.5 10.4v3.2M5.9 12h3.2"/>
+      </g>
+      <g fill="currentColor"><circle cx="15.6" cy="11" r="1"/><circle cx="17.8" cy="13.1" r="1"/></g>
+    </symbol>
+
+    <!-- Feature icons -->
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/>
+        <circle cx="12" cy="10" r="2.3"/>
+      </g>
+    </symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/>
+        <path d="M8 6H5.2a3 3 0 0 0 3 4M16 6h2.8a3 3 0 0 1-3 4"/>
+        <path d="M12 13v4M9 20.5h6M10 17h4v3.5h-4z"/>
+      </g>
+    </symbol>
+    <symbol id="i-profile" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2.5"/>
+        <circle cx="9" cy="11" r="2.2"/>
+        <path d="M5.8 16.2a3.4 3.4 0 0 1 6.4 0M14.5 10h3.5M14.5 13.5h3.5"/>
+      </g>
+    </symbol>
+    <symbol id="i-community" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="8.5" r="3"/>
+        <path d="M3.5 19a5.5 5.5 0 0 1 11 0"/>
+        <circle cx="17" cy="9.5" r="2.3"/>
+        <path d="M15.8 14.2a4.5 4.5 0 0 1 5.2 4.3"/>
+      </g>
+    </symbol>
+
+    <!-- UI icons -->
+    <symbol id="i-info" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6h.01"/>
+      </g>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24">
+      <path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 18.5h3"/>
+      </g>
+    </symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24">
+      <path d="M12 21a6 6 0 0 0 6-6c0-3.5-2.4-5.6-3.6-8.6-.5 2.3-1.7 3.6-3 4.2C11.6 8 10.6 5.4 8.6 3.5 8.8 7.4 6 9.8 6 15a6 6 0 0 0 6 6Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24">
+      <path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4Z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24">
+      <path d="M5 20V12M12 20V5M19 20v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =========================================================
+       1. HEADER
+       ========================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <svg class="wordmark" role="img" aria-label="Rivalo"><use href="#wordmark"/></svg>
+      <p class="status-pill">
+        <span class="status-pill__dot" aria-hidden="true"></span>
+        Coming soon
+      </p>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         2. HERO
+         ========================================================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <!-- Decorative background: glows + football pitch in perspective -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="glow glow--lime"></div>
+        <div class="glow glow--blue"></div>
+        <svg class="hero__pitch" viewBox="0 0 1050 680" preserveAspectRatio="none">
+          <g fill="none" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke">
+            <rect x="5" y="5" width="1040" height="670"/>
+            <path d="M525 5V675"/>
+            <circle cx="525" cy="340" r="91.5"/>
+            <rect x="5" y="138.5" width="165" height="403"/>
+            <rect x="880" y="138.5" width="165" height="403"/>
+            <rect x="5" y="248.5" width="55" height="183"/>
+            <rect x="990" y="248.5" width="55" height="183"/>
+            <path d="M170 266.9A91.5 91.5 0 0 1 170 413.1M880 266.9A91.5 91.5 0 0 0 880 413.1"/>
+            <path d="M5 15A10 10 0 0 0 15 5M1035 5A10 10 0 0 0 1045 15M1045 665A10 10 0 0 0 1035 675M15 675A10 10 0 0 0 5 665"/>
+          </g>
+          <g fill="currentColor">
+            <circle cx="525" cy="340" r="4"/><circle cx="115" cy="340" r="3"/><circle cx="935" cy="340" r="3"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__anim" style="--d: 0">Your next chapter of competition</p>
+
+          <h1 id="hero-title" class="hero__title hero__anim" style="--d: 1">
+            <span class="hero__line">Your game.</span>
+            <span class="hero__line">Your <span class="accent">rival.</span></span>
+          </h1>
+
+          <p class="hero__lead hero__anim" style="--d: 2">
+            Football, padel, cue sports, and e-sports.
+            <span class="block">One arena to compete, earn points, and build your legacy.</span>
+          </p>
+
+          <p class="tagline hero__anim" style="--d: 3">
+            <span>Play<i aria-hidden="true">.</i></span>
+            <span>Win<i aria-hidden="true">.</i></span>
+            <span>Rise<i aria-hidden="true">.</i></span>
+          </p>
+
+          <a class="hero__link hero__anim" style="--d: 4" href="#countdown">
+            View the countdown
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+          </a>
+        </div>
+
+        <!-- Decorative sports emblem: pitch circle, padel racket, pool balls, crosshair -->
+        <div class="hero__art" aria-hidden="true">
+          <svg viewBox="0 0 560 560" class="emblem">
+            <defs>
+              <clipPath id="stripe-clip"><circle cx="0" cy="0" r="42"/></clipPath>
+              <radialGradient id="emblem-fade" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#182238" stop-opacity=".9"/>
+                <stop offset="1" stop-color="#0B1020" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <circle cx="280" cy="280" r="250" fill="url(#emblem-fade)"/>
+            <!-- Centre circle + halfway line -->
+            <g class="emblem__pitch" fill="none" stroke-width="2">
+              <circle cx="280" cy="280" r="214" stroke-dasharray="2 12" stroke-linecap="round"/>
+              <circle cx="280" cy="280" r="150"/>
+              <path d="M280 20V540"/>
+              <circle cx="280" cy="280" r="5" class="emblem__spot"/>
+            </g>
+
+            <!-- Padel racket -->
+            <g transform="translate(352 196) rotate(28)">
+              <g class="float float--a">
+                <g class="emblem__racket" fill="none" stroke-width="3" stroke-linejoin="round">
+                  <ellipse cx="0" cy="0" rx="72" ry="84"/>
+                  <ellipse cx="0" cy="0" rx="60" ry="72" stroke-width="1.5" opacity=".5"/>
+                  <path d="M-40 70 Q-15 100 -13 124 H13 Q15 100 40 70"/>
+                  <rect x="-15" y="124" width="30" height="96" rx="11"/>
+                  <path d="M-15 146H15M-15 166H15M-15 186H15" stroke-width="1.5" opacity=".6"/>
+                </g>
+                <g class="emblem__holes">
+                  <circle cx="-22" cy="-52" r="4.5"/><circle cx="0" cy="-52" r="4.5"/><circle cx="22" cy="-52" r="4.5"/>
+                  <circle cx="-33" cy="-26" r="4.5"/><circle cx="-11" cy="-26" r="4.5"/><circle cx="11" cy="-26" r="4.5"/><circle cx="33" cy="-26" r="4.5"/>
+                  <circle cx="-44" cy="0" r="4.5"/><circle cx="-22" cy="0" r="4.5"/><circle cx="0" cy="0" r="4.5"/><circle cx="22" cy="0" r="4.5"/><circle cx="44" cy="0" r="4.5"/>
+                  <circle cx="-33" cy="26" r="4.5"/><circle cx="-11" cy="26" r="4.5"/><circle cx="11" cy="26" r="4.5"/><circle cx="33" cy="26" r="4.5"/>
+                  <circle cx="-22" cy="52" r="4.5"/><circle cx="0" cy="52" r="4.5"/><circle cx="22" cy="52" r="4.5"/>
+                </g>
+              </g>
+            </g>
+
+            <!-- Pool balls -->
+            <g transform="translate(150 392)">
+              <g class="float float--b">
+                <!-- cue ball -->
+                <g transform="translate(36 -84)">
+                  <circle r="42" class="ball ball--cue"/>
+                  <circle r="5" cx="-12" cy="-12" class="ball__shine"/>
+                </g>
+                <!-- solid ball -->
+                <g>
+                  <circle r="42" class="ball ball--solid"/>
+                  <circle r="17" class="ball__label"/>
+                  <text y="6" class="ball__num">7</text>
+                </g>
+                <!-- striped ball -->
+                <g transform="translate(88 28)">
+                  <rect x="-42" y="-17" width="84" height="34" clip-path="url(#stripe-clip)" class="ball__stripe"/>
+                  <circle r="42" class="ball ball--stripe"/>
+                  <circle r="15" class="ball__label"/>
+                  <text y="5" class="ball__num ball__num--sm">12</text>
+                </g>
+              </g>
+            </g>
+
+            <!-- Crosshair -->
+            <g transform="translate(118 150)">
+              <g class="float float--c">
+                <g class="emblem__cross" fill="none" stroke-width="3" stroke-linecap="round">
+                  <circle r="44"/>
+                  <circle r="26" stroke-width="1.5" opacity=".55"/>
+                  <path d="M0 -62V-32M0 32V62M-62 0H-32M32 0H62"/>
+                </g>
+                <circle r="5" class="emblem__dot"/>
+              </g>
+            </g>
+
+            <!-- Small lime corner flag accent -->
+            <path d="M470 430v-56l34 14-34 14" fill="none" class="emblem__flag" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. LAUNCH COUNTDOWN
+         The launch date is set in script.js (LAUNCH_DATE).
+         ========================================================= -->
+    <section class="section countdown" id="countdown" aria-labelledby="countdown-title">
+      <div class="container">
+        <div class="countdown__panel" data-reveal>
+          <p class="eyebrow eyebrow--center">Launch countdown</p>
+          <h2 id="countdown-title" class="section-title section-title--center">The countdown to Rivalo</h2>
+
+          <!-- Announced only when the state changes (never every second) -->
+          <p class="countdown__status" id="countdown-status" role="status">
+            <span class="countdown__status-dot" aria-hidden="true"></span>
+            <span id="countdown-status-text">Launch date coming soon</span>
+          </p>
+
+          <div class="countdown__grid" id="countdown-timer" role="timer" aria-live="off" aria-atomic="false">
+            <div class="cd-card">
+              <span class="cd-card__value" data-unit="days">—</span>
+              <span class="cd-card__label">Days</span>
+            </div>
+            <div class="cd-card">
+              <span class="cd-card__value" data-unit="hours">—</span>
+              <span class="cd-card__label">Hours</span>
+            </div>
+            <div class="cd-card">
+              <span class="cd-card__value" data-unit="minutes">—</span>
+              <span class="cd-card__label">Minutes</span>
+            </div>
+            <div class="cd-card">
+              <span class="cd-card__value" data-unit="seconds">—</span>
+              <span class="cd-card__label">Seconds</span>
+            </div>
+          </div>
+
+          <p class="countdown__complete" id="countdown-complete" role="status" hidden>
+            The countdown is complete. Stay tuned for our launch announcement.
+          </p>
+
+          <p class="countdown__note" id="countdown-note" hidden>Times are shown in your local time zone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SPORTS STRIP (informational, not links)
+         ========================================================= -->
+    <section class="section section--tight sports" aria-labelledby="sports-title">
+      <div class="container">
+        <div class="section-head section-head--row" data-reveal>
+          <div>
+            <p class="eyebrow">Four arenas</p>
+            <h2 id="sports-title" class="section-title section-title--sm">Pick your battleground.</h2>
+          </div>
+          <p class="section-head__aside">Launching with four sports — one profile and one ranking journey across all of them.</p>
+        </div>
+
+        <ul class="sports__grid" role="list">
+          <li class="sport-card" data-reveal style="--i: 0">
+            <span class="sport-card__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-football"/></svg></span>
+            <span class="sport-card__num" aria-hidden="true">01</span>
+            <h3 class="sport-card__name">Football</h3>
+            <p class="sport-card__meta">On the pitch</p>
+          </li>
+          <li class="sport-card" data-reveal style="--i: 1">
+            <span class="sport-card__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-padel"/></svg></span>
+            <span class="sport-card__num" aria-hidden="true">02</span>
+            <h3 class="sport-card__name">Padel</h3>
+            <p class="sport-card__meta">On the court</p>
+          </li>
+          <li class="sport-card" data-reveal style="--i: 2">
+            <span class="sport-card__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-cue"/></svg></span>
+            <span class="sport-card__num" aria-hidden="true">03</span>
+            <h3 class="sport-card__name">Cue Sports</h3>
+            <p class="sport-card__meta">At the table</p>
+          </li>
+          <li class="sport-card" data-reveal style="--i: 3">
+            <span class="sport-card__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-esports"/></svg></span>
+            <span class="sport-card__num" aria-hidden="true">04</span>
+            <h3 class="sport-card__name">E-sports</h3>
+            <p class="sport-card__meta">On the screen</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. WHAT IS COMING (planned features)
+         ========================================================= -->
+    <section class="section features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">What's coming</p>
+          <h2 id="features-title" class="section-title">More than a game.</h2>
+          <p class="section-head__lead">Here's what we're building for launch. These features are planned and may evolve before release.</p>
+        </div>
+
+        <ul class="features__grid" role="list">
+          <li class="feature-card" data-reveal style="--i: 0">
+            <div class="feature-card__top">
+              <span class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span class="tag">Planned</span>
+            </div>
+            <h3 class="feature-card__title">Compete Locally</h3>
+            <p class="feature-card__text">Discover upcoming tournaments across your favorite sports.</p>
+          </li>
+          <li class="feature-card" data-reveal style="--i: 1">
+            <div class="feature-card__top">
+              <span class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg></span>
+              <span class="tag">Planned</span>
+            </div>
+            <h3 class="feature-card__title">Earn Your Place</h3>
+            <p class="feature-card__text">Earn points from approved Rivalo tournament results.</p>
+          </li>
+          <li class="feature-card" data-reveal style="--i: 2">
+            <div class="feature-card__top">
+              <span class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-profile"/></svg></span>
+              <span class="tag">Planned</span>
+            </div>
+            <h3 class="feature-card__title">Build Your Profile</h3>
+            <p class="feature-card__text">Show your competition history, badges, and achievements.</p>
+          </li>
+          <li class="feature-card" data-reveal style="--i: 3">
+            <div class="feature-card__top">
+              <span class="feature-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-community"/></svg></span>
+              <span class="tag">Planned</span>
+            </div>
+            <h3 class="feature-card__title">Find Your Community</h3>
+            <p class="feature-card__text">Connect through teams, events, and a shared passion for competition.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. MOBILE APP TEASER (concept mockup, sample data only)
+         ========================================================= -->
+    <section class="section app" aria-labelledby="app-title">
+      <div class="container app__inner">
+        <div class="app__copy" data-reveal>
+          <p class="eyebrow">First look</p>
+          <h2 id="app-title" class="section-title">The arena in your pocket.</h2>
+          <p class="section-head__lead">An early concept of the Rivalo home screen: upcoming tournaments, a live-feeling leaderboard, and the badges you'll earn along the way.</p>
+          <ul class="app__points" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-trophy"/></svg>Tournaments near you, at a glance</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg>Rankings built from approved results</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>Achievements that follow your journey</li>
+          </ul>
+        </div>
+
+        <figure class="app__figure" data-reveal>
+          <div class="phone-stage" role="img" aria-label="Concept illustration of the Rivalo app home screen showing sample upcoming tournaments, a small leaderboard, and achievement badges. Sample content only.">
+            <div class="phone-glow" aria-hidden="true"></div>
+
+            <div class="phone" aria-hidden="true">
+              <div class="phone__screen">
+                <div class="ph-status">
+                  <span>9:41</span>
+                  <span class="ph-island"></span>
+                  <span class="ph-sys"><i></i><i></i><i></i></span>
+                </div>
+
+                <div class="ph-header">
+                  <svg class="ph-wordmark"><use href="#wordmark"/></svg>
+                  <span class="ph-avatar">SR</span>
+                </div>
+
+                <div class="ph-hello">
+                  <p class="ph-hello__hi">Welcome back, Sam</p>
+                  <p class="ph-hello__meta"><b>1,240</b> pts · Rank #12</p>
+                </div>
+
+                <p class="ph-label">Upcoming tournaments <span>See all</span></p>
+                <div class="ph-cards">
+                  <div class="ph-card ph-card--lime">
+                    <span class="ph-chip"><svg><use href="#i-padel"/></svg>Padel</span>
+                    <p class="ph-card__title">Harbor Padel Open</p>
+                    <p class="ph-card__meta">Sat · 16 teams</p>
+                  </div>
+                  <div class="ph-card">
+                    <span class="ph-chip"><svg><use href="#i-football"/></svg>Football</span>
+                    <p class="ph-card__title">Night League 5s</p>
+                    <p class="ph-card__meta">Sun · 8 teams</p>
+                  </div>
+                </div>
+
+                <p class="ph-label">Leaderboard <span>This week</span></p>
+                <ol class="ph-board">
+                  <li><span class="ph-rank">1</span><span class="ph-mini-av">LK</span><span class="ph-name">Lina Kerr</span><span class="ph-pts">2,480</span></li>
+                  <li><span class="ph-rank">2</span><span class="ph-mini-av">OR</span><span class="ph-name">Omar Reyes</span><span class="ph-pts">2,315</span></li>
+                  <li><span class="ph-rank">3</span><span class="ph-mini-av">DP</span><span class="ph-name">Dev Patel</span><span class="ph-pts">2,190</span></li>
+                </ol>
+
+                <p class="ph-label">Achievements</p>
+                <div class="ph-badges">
+                  <span class="ph-badge ph-badge--on"><svg><use href="#i-trophy"/></svg></span>
+                  <span class="ph-badge ph-badge--on"><svg><use href="#i-flame"/></svg></span>
+                  <span class="ph-badge"><svg><use href="#i-star"/></svg></span>
+                  <span class="ph-badge"><svg><use href="#i-cue"/></svg></span>
+                </div>
+
+                <div class="ph-tabbar">
+                  <span class="is-active"><svg><use href="#i-home"/></svg></span>
+                  <span><svg><use href="#i-trophy"/></svg></span>
+                  <span><svg><use href="#i-chart"/></svg></span>
+                  <span><svg><use href="#i-profile"/></svg></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-chip float-chip--a" aria-hidden="true">
+              <span class="float-chip__icon"><svg><use href="#i-trophy"/></svg></span>
+              <span><b>Match won</b><small>+40 pts</small></span>
+            </div>
+            <div class="float-chip float-chip--b" aria-hidden="true">
+              <span class="float-chip__icon float-chip__icon--blue"><svg><use href="#i-flame"/></svg></span>
+              <span><b>New badge</b><small>3-win streak</small></span>
+            </div>
+          </div>
+
+          <figcaption class="app__caption">App concept preview — sample content.</figcaption>
+          <p class="app__platforms">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Planned for Android and iPhone.
+          </p>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. LAUNCH UPDATES (preview only — NOT connected)
+         To connect a real email service later: set the form's
+         action/method (or handle submit in script.js), remove the
+         `disabled` attributes, and replace the preview note.
+         To remove this section: delete everything between the
+         SIGNUP START / SIGNUP END comments.
+         ========================================================= -->
+    <!-- SIGNUP START -->
+    <section class="section signup" aria-labelledby="signup-title">
+      <div class="container">
+        <div class="signup__card" data-reveal>
+          <div class="signup__copy">
+            <p class="eyebrow">Launch updates</p>
+            <h2 id="signup-title" class="section-title section-title--sm">Be first into the arena.</h2>
+            <p class="signup__desc">Launch updates will be available here soon.</p>
+          </div>
+
+          <form class="signup__form" id="signup-form" novalidate aria-describedby="signup-note">
+            <label class="signup__label" for="signup-email">Email address</label>
+            <div class="signup__row">
+              <input class="signup__input" id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="off" disabled>
+              <button class="btn btn--lime" type="submit" disabled>Notify Me</button>
+            </div>
+            <p class="signup__note" id="signup-note">
+              <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
+              Preview only — email sign-up is not active yet.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- SIGNUP END -->
+
+  </main>
+
+  <!-- =========================================================
+       8. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="wordmark wordmark--footer" role="img" aria-label="Rivalo"><use href="#wordmark"/></svg>
+        <p class="footer-tagline">Play. Win. Rise.</p>
+      </div>
+      <p class="footer-meta">
+        © <span id="year">2026</span> Rivalo. All rights reserved.
+        <span class="footer-dot" aria-hidden="true">·</span>
+        <span class="footer-soon">Coming soon.</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

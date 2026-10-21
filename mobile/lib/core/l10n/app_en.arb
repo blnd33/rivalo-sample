@@ -1,0 +1,1312 @@
+{
+  "@@locale": "en",
+  "appName": "RIVALO",
+  "tagline": "Play. Win. Rise.",
+  "actionContinue": "Continue",
+  "actionCancel": "Cancel",
+  "actionSave": "Save",
+  "actionRetry": "Try again",
+  "actionDone": "Done",
+  "actionClose": "Close",
+  "actionConfirm": "Confirm",
+  "actionEdit": "Edit",
+  "actionSeeAll": "See all",
+  "loading": "Loading",
+  "sampleData": "Sample data",
+  "comingSoonTitle": "Coming in a future update",
+  "errorGenericTitle": "Something went wrong",
+  "errorGenericMessage": "Please try again. If the problem continues, contact support.",
+  "errorOfflineTitle": "You're offline",
+  "errorOfflineMessage": "Check your connection and try again.",
+  "errorRateLimited": "Too many attempts. Wait a minute and try again.",
+  "errorNotFound": "This item is no longer available.",
+  "offlineBanner": "You're offline. Some information may be out of date.",
+  "tabHome": "Home",
+  "tabCompete": "Compete",
+  "tabRankings": "Rankings",
+  "tabNews": "News",
+  "tabProfile": "Profile",
+  "welcomeHeadline": "Your game. Your rival.",
+  "welcomeBody": "Join local tournaments in football, padel, cue sports and e-sports. Points come only from approved RIVALO results.",
+  "welcomeCreateAccount": "Create account",
+  "welcomeSignIn": "I already have an account",
+  "welcomeBrowseGuest": "Browse as guest",
+  "guestHomeTitle": "Welcome to RIVALO",
+  "guestTitle": "You're browsing as a guest",
+  "guestBody": "Look around tournaments, rankings and player profiles. Create a free account to register, join teams and earn points.",
+  "guestBenefitRegister": "Register for tournaments",
+  "guestBenefitTeams": "Create and join teams",
+  "guestBenefitPoints": "Earn points from approved results",
+  "guestBenefitProfile": "Build your public player profile",
+  "guestLeave": "Back to welcome screen",
+  "homeUpcoming": "Upcoming tournaments",
+  "accountRequiredTitle": "Create a free account",
+  "accountRequiredRegister": "You need an account to register for tournaments.",
+  "accountRequiredTeams": "You need an account to create or join teams.",
+  "accountRequiredInbox": "You need an account to receive team invitations.",
+  "accountRequiredGeneric": "You need an account to do this.",
+  "accountRequiredNotNow": "Not now",
+  "detailSignUpToRegister": "Create an account to register",
+  "signInTitle": "Sign in",
+  "loginFieldLabel": "Email or username",
+  "passwordLabel": "Password",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password",
+  "forgotPasswordLink": "Forgot password?",
+  "signInButton": "Sign in",
+  "noAccountPrompt": "New to RIVALO? Create an account",
+  "createAccountTitle": "Create account",
+  "usernameLabel": "Username",
+  "usernameHelper": "3–30 characters: letters, numbers, _ and . This is public.",
+  "emailLabel": "Email",
+  "emailHelper": "Private. Used for sign-in and important account messages.",
+  "displayNameLabel": "Display name (optional)",
+  "displayNameHelper": "Shown on your public profile if you allow it.",
+  "passwordHelper": "At least 10 characters, with letters and numbers.",
+  "createAccountButton": "Create account",
+  "registerLegalNotice": "Before you sign up, you can read our Terms of use, Privacy policy and Community guidelines. Terms and Privacy are drafts until their legal review is complete.",
+  "haveAccountPrompt": "Already have an account? Sign in",
+  "validationRequired": "Required",
+  "validationEmail": "Enter a valid email address",
+  "validationUsername": "Use 3–30 letters, numbers, _ or .",
+  "validationPassword": "Use at least 10 characters with letters and numbers",
+  "verifyEmailTitle": "Check your email",
+  "verifyEmailBody": "We sent a verification link to {email}. Open it on any device. A verified email is needed to join teams and register for tournaments.",
+  "@verifyEmailBody": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "verifyResend": "Resend email",
+  "verifyResent": "Verification email sent.",
+  "verifyCheck": "I've verified my email",
+  "verifyLater": "Do this later",
+  "verifyStillPending": "Your email isn't verified yet. Open the link in the email, then try again.",
+  "verifyBannerTitle": "Verify your email",
+  "verifyBannerBody": "Needed to join teams and register for tournaments.",
+  "forgotTitle": "Reset password",
+  "forgotBody": "Enter your account email. If an account exists, we'll send a link to choose a new password.",
+  "forgotSend": "Send reset link",
+  "forgotSent": "If an account exists for that email, a reset link is on its way.",
+  "onboardingTitle": "What do you play?",
+  "onboardingBody": "Choose your sports and games to see relevant tournaments. You can change this anytime.",
+  "onboardingSave": "Save and continue",
+  "onboardingSkip": "Skip for now",
+  "onboardingSelected": "{count, plural, =0{Nothing selected} =1{1 selected} other{{count} selected}}",
+  "@onboardingSelected": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeGreeting": "Hi, {name}",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeUpcomingForYou": "Upcoming for you",
+  "homeMyRegistrations": "My registrations",
+  "homeNoDisciplinesTitle": "Pick your sports",
+  "homeNoDisciplinesBody": "Select what you play to see relevant tournaments.",
+  "homeChooseSports": "Choose sports",
+  "homeEmptyUpcomingTitle": "Nothing scheduled yet",
+  "homeEmptyUpcomingBody": "New tournaments for your sports will appear here.",
+  "homeNoRegistrations": "You haven't registered for a tournament yet.",
+  "homeInvitations": "{count, plural, =1{1 pending invitation} other{{count} pending invitations}}",
+  "@homeInvitations": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeReview": "Review",
+  "competeTitle": "Compete",
+  "competeTournaments": "Tournaments",
+  "competeMyTeams": "My teams",
+  "filterAll": "All",
+  "tournamentsEmptyTitle": "No tournaments yet",
+  "tournamentsEmptyBody": "Published tournaments appear here. Check back soon.",
+  "placesLeft": "{count, plural, =0{Full} =1{1 place left} other{{count} places left}}",
+  "@placesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "waitlistCount": "{count} on waitlist",
+  "@waitlistCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "free": "Free",
+  "feeInPerson": "{fee} · paid in person",
+  "@feeInPerson": {
+    "placeholders": {
+      "fee": {
+        "type": "String"
+      }
+    }
+  },
+  "dateTba": "Date to be announced",
+  "statusDraft": "Draft",
+  "statusPublished": "Published",
+  "statusRegistrationOpen": "Registration open",
+  "statusRegistrationClosed": "Registration closed",
+  "statusInProgress": "In progress",
+  "statusCompleted": "Completed",
+  "statusPostponed": "Postponed",
+  "statusCancelled": "Cancelled",
+  "regIndividual": "Individual",
+  "regPair": "Pair",
+  "regTeam": "Team",
+  "formatSingleElimination": "Single elimination",
+  "formatRoundRobin": "Round robin",
+  "formatGroupsKnockout": "Groups + knockout",
+  "detailStarts": "Starts",
+  "detailEnds": "Ends",
+  "detailVenue": "Venue",
+  "detailOnline": "Online region",
+  "detailRegistration": "Registration",
+  "detailRegistrationCloses": "Closes {date}",
+  "@detailRegistrationCloses": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "detailRegistrationOpens": "Opens {date}",
+  "@detailRegistrationOpens": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "detailCheckInCloses": "Check-in closes",
+  "detailFormat": "Format",
+  "detailEntry": "Entry",
+  "detailEntrants": "Entrants",
+  "detailEntrantsValue": "{reserved} of {max} places taken",
+  "@detailEntrantsValue": {
+    "placeholders": {
+      "reserved": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "detailRoster": "Roster",
+  "detailRosterValue": "{min}–{max} players, up to {subs} substitutes",
+  "@detailRosterValue": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      },
+      "subs": {
+        "type": "int"
+      }
+    }
+  },
+  "detailAbout": "About",
+  "detailRules": "Rules",
+  "detailEligibility": "Eligibility",
+  "detailPrizes": "Prizes and deductions",
+  "detailRulesLocked": "These rules are locked. Any correction is published with a reason.",
+  "detailPaymentNotice": "Entry fees are paid in person at the venue to authorized staff. There is no payment in the app.",
+  "detailRankingEligible": "Counts toward rankings once points rules are published",
+  "detailRankingNotEligible": "Does not count toward rankings",
+  "detailFixturesComing": "Fixtures and the bracket will appear here after the draw.",
+  "detailLobby": "Lobby details",
+  "detailTimesLocal": "Times are shown in your device's time zone.",
+  "detailStatusReason": "Update from the organizers",
+  "detailRegister": "Register",
+  "detailJoinWaitlist": "Join waitlist",
+  "detailRegistrationNotOpen": "Registration isn't open",
+  "detailVerifyToRegister": "Verify your email to register",
+  "detailViewEntrants": "Entrants",
+  "myEntryTitle": "Your registration",
+  "entryRegistration": "Registration",
+  "entryPayment": "Payment",
+  "entryCheckIn": "Check-in",
+  "entryEligibility": "Eligibility",
+  "entryWaitlistPosition": "Waitlist #{position}",
+  "@entryWaitlistPosition": {
+    "placeholders": {
+      "position": {
+        "type": "int"
+      }
+    }
+  },
+  "entryCancel": "Cancel registration",
+  "entryCancelConfirmTitle": "Cancel registration?",
+  "entryCancelConfirmBody": "Your place will be offered to the next entrant on the waitlist.",
+  "entryCancelled": "Registration cancelled.",
+  "entryRosterLocked": "Roster locked",
+  "entryNextStepFree": "Next: check in with staff at the venue before check-in closes.",
+  "entryNextStepPaid": "Next: pay {fee} in person and check in with staff before check-in closes.",
+  "@entryNextStepPaid": {
+    "placeholders": {
+      "fee": {
+        "type": "String"
+      }
+    }
+  },
+  "regStatusReserved": "Reserved",
+  "regStatusWaitlisted": "Waitlisted",
+  "regStatusCancelled": "Cancelled",
+  "regStatusWithdrawn": "Withdrawn",
+  "regStatusRejected": "Rejected",
+  "regStatusNoShow": "No-show",
+  "payNotRequired": "Not required",
+  "payUnpaid": "Pay at venue",
+  "payPaid": "Paid",
+  "payRefunded": "Refunded",
+  "payPartiallyRefunded": "Partially refunded",
+  "checkInNot": "Not checked in",
+  "checkInDone": "Checked in",
+  "eligPending": "Pending check-in",
+  "eligEligible": "Eligible",
+  "eligIneligible": "Not eligible",
+  "registerTitle": "Register",
+  "registerIndividualBody": "You're registering as an individual for {tournament}.",
+  "@registerIndividualBody": {
+    "placeholders": {
+      "tournament": {
+        "type": "String"
+      }
+    }
+  },
+  "registerChooseTeam": "Choose your team",
+  "registerNoTeamsTitle": "No eligible team",
+  "registerNoTeamsBody": "You need to captain a {sport} team to register. Pairs register as two-player teams.",
+  "@registerNoTeamsBody": {
+    "placeholders": {
+      "sport": {
+        "type": "String"
+      }
+    }
+  },
+  "registerCreateTeam": "Create a team",
+  "registerChoosePlayers": "Players",
+  "registerPlayersRange": "Choose {min}–{max} players",
+  "@registerPlayersRange": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "registerPlayersExact": "Choose {count} players",
+  "@registerPlayersExact": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "registerSubstitutes": "Substitutes (up to {count})",
+  "@registerSubstitutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "registerSelectedCount": "{selected} selected",
+  "@registerSelectedCount": {
+    "placeholders": {
+      "selected": {
+        "type": "int"
+      }
+    }
+  },
+  "registerConfirm": "Confirm registration",
+  "registerSuccessReserved": "You're in. Your place is reserved.",
+  "registerSuccessWaitlisted": "The tournament is full. You're on the waitlist.",
+  "registerOnlyAccepted": "Only members who accepted your invitation can be selected.",
+  "roleCaptain": "Captain",
+  "roleMember": "Member",
+  "roleSubstitute": "Substitute",
+  "rolePlayer": "Player",
+  "teamsTitle": "My teams",
+  "teamsEmptyTitle": "No teams yet",
+  "teamsEmptyBody": "Create a team or accept an invitation to play in team and pair tournaments.",
+  "teamsCreate": "Create team",
+  "teamCreateTitle": "New team",
+  "teamNameLabel": "Team name",
+  "teamSportLabel": "Sport",
+  "teamCreateHelper": "You'll be the captain. Pairs, such as padel doubles, are two-player teams.",
+  "teamMembersHeader": "Members",
+  "teamMembersCount": "{count} of {limit}",
+  "@teamMembersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "teamInvitesHeader": "Pending invitations",
+  "teamInvite": "Invite player",
+  "teamInviteTitle": "Invite a player",
+  "teamInviteSearchLabel": "Username",
+  "teamInviteSearchHint": "Search by username",
+  "teamInviteAs": "Invite as",
+  "teamInviteSend": "Send invitation",
+  "teamInviteSent": "Invitation sent to {username}.",
+  "@teamInviteSent": {
+    "placeholders": {
+      "username": {
+        "type": "String"
+      }
+    }
+  },
+  "teamInviteNoResults": "No players found.",
+  "teamRevoke": "Revoke",
+  "teamRemoveMember": "Remove from team",
+  "teamRemoveConfirm": "Remove {name} from the team?",
+  "@teamRemoveConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "teamMakeSub": "Make substitute",
+  "teamMakeMember": "Make regular member",
+  "teamTransferCaptain": "Nominate as captain",
+  "teamTransferConfirm": "{name} must accept before becoming captain. You'll become a regular member.",
+  "@teamTransferConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "teamTransferPending": "Waiting for {name} to accept captaincy.",
+  "@teamTransferPending": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "teamLeave": "Leave team",
+  "teamLeaveConfirm": "Leave {team}? Rosters already submitted to tournaments don't change.",
+  "@teamLeaveConfirm": {
+    "placeholders": {
+      "team": {
+        "type": "String"
+      }
+    }
+  },
+  "teamDisband": "Disband team",
+  "teamDisbandConfirm": "Disband {team}? All members are released. Tournament history is kept.",
+  "@teamDisbandConfirm": {
+    "placeholders": {
+      "team": {
+        "type": "String"
+      }
+    }
+  },
+  "teamFull": "This team is full.",
+  "teamRosterHistoryNote": "Changes here never alter rosters already submitted to tournaments.",
+  "teamMemberActions": "Actions for {name}",
+  "@teamMemberActions": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inboxTitle": "Invitations",
+  "inboxEmptyTitle": "No pending invitations",
+  "inboxEmptyBody": "Team invitations and captaincy nominations appear here.",
+  "inboxInvitedBy": "Invited by {name} · {sport}",
+  "@inboxInvitedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "sport": {
+        "type": "String"
+      }
+    }
+  },
+  "inboxAccept": "Accept",
+  "inboxDecline": "Decline",
+  "inboxJoined": "You joined {team}.",
+  "@inboxJoined": {
+    "placeholders": {
+      "team": {
+        "type": "String"
+      }
+    }
+  },
+  "inboxNominationBody": "{name} nominated you as captain of {team}.",
+  "@inboxNominationBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "team": {
+        "type": "String"
+      }
+    }
+  },
+  "inboxBecomeCaptain": "Become captain",
+  "rankingsTitle": "Rankings",
+  "rankingsComingBody": "Leaderboards for each discipline arrive once results are approved under published points rules. No points have been awarded yet.",
+  "rankingsPrinciple": "Points come only from approved RIVALO tournament results. They can't be bought, and outside results don't count.",
+  "newsTitle": "News",
+  "newsComingBody": "Tournament recaps, announcements and community stories will appear here.",
+  "profileTitle": "Profile",
+  "profileEdit": "Edit profile",
+  "profileSports": "Sports & games",
+  "profileTeams": "Teams",
+  "profileHistory": "Tournament history",
+  "profileHistoryEmpty": "Completed tournaments will appear here.",
+  "profilePoints": "Points",
+  "profilePointsEmpty": "No points yet. Points are awarded only for approved results.",
+  "profileBadges": "Achievements",
+  "profileBadgesEmpty": "No badges yet. Badges come from approved results, final placements and check-ins.",
+  "profileViewPublic": "View public profile",
+  "profileSettings": "Settings",
+  "profileMemberSince": "Member since {date}",
+  "@profileMemberSince": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "profileHidden": "Hidden by this player's privacy settings.",
+  "profileNoSports": "No sports selected yet.",
+  "publicProfileTitle": "Player",
+  "editProfileTitle": "Edit profile",
+  "changePhoto": "Change photo",
+  "choosePhoto": "Choose from library",
+  "takePhoto": "Take photo",
+  "removePhoto": "Remove photo",
+  "cityLabel": "City (optional)",
+  "phoneLabel": "Phone (private, optional)",
+  "phoneHelper": "Visible only to event staff for operational contact. Never public.",
+  "profileSaved": "Profile saved.",
+  "photoUpdated": "Photo updated.",
+  "settingsTitle": "Settings",
+  "settingsAccount": "Account",
+  "settingsPrivacy": "Privacy",
+  "settingsNotifications": "Notifications",
+  "settingsLanguage": "Language",
+  "settingsDevices": "Signed-in devices",
+  "settingsChangePassword": "Change password",
+  "settingsSignOut": "Sign out",
+  "settingsSignOutAll": "Sign out of all devices",
+  "settingsDeleteAccount": "Delete account",
+  "settingsSupport": "Support",
+  "settingsSupportContact": "Contact support",
+  "settingsSupportUnavailable": "The support contact will be published before launch.",
+  "settingsAbout": "About",
+  "settingsDeveloper": "Developer",
+  "settingsDesignGallery": "Design system gallery",
+  "signOutConfirm": "Sign out of RIVALO on this device?",
+  "signOutAllConfirm": "Sign out on every device, including this one?",
+  "privacyTitle": "Privacy",
+  "privacyShowName": "Show display name",
+  "privacyShowNameSub": "When off, only your username is shown.",
+  "privacyShowCity": "Show city",
+  "privacyShowTeams": "Show teams",
+  "privacyShowHistory": "Show tournament history",
+  "privacyFooter": "Your email, phone and payment records are always private.",
+  "notificationsTitle": "Notifications",
+  "notifNewTournaments": "New tournaments for my sports",
+  "notifTeamInvitations": "Team invitations",
+  "notifRegistration": "Registration updates",
+  "notifCheckIn": "Check-in reminders",
+  "notifMatch": "Match reminders",
+  "notifVenue": "Venue and schedule changes",
+  "notifResults": "Results",
+  "notifPoints": "Points and achievements",
+  "notifNews": "News",
+  "notificationsFooter": "Everything also arrives in your in-app inbox. These switches control phone notifications only.",
+  "languageTitle": "Language",
+  "languageEnglish": "English",
+  "languageArabic": "العربية",
+  "languageKurdish": "Kurdî (Kurmancî)",
+  "languageKurdishReview": "Kurdish (Kurmanji) translation is a draft pending native-speaker review.",
+  "languageArabicReview": "Arabic translation is a draft pending native-speaker review.",
+  "devicesTitle": "Signed-in devices",
+  "deviceThis": "This device",
+  "deviceLastUsed": "Last used {date}",
+  "@deviceLastUsed": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "deviceNeverUsed": "Not used yet",
+  "deviceSignOut": "Sign out",
+  "passwordTitle": "Change password",
+  "currentPasswordLabel": "Current password",
+  "newPasswordLabel": "New password",
+  "passwordChanged": "Password changed. Other devices were signed out.",
+  "deleteTitle": "Delete account",
+  "deleteBody": "Your account will be deleted after a {days}-day grace period. Sign in and cancel anytime before then. Personal data is removed; approved tournament results remain and show \"Deleted player\".",
+  "@deleteBody": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteReasonLabel": "Reason (optional)",
+  "deletePasswordLabel": "Confirm with your password",
+  "deleteButton": "Schedule deletion",
+  "deleteScheduled": "Deletion scheduled for {date}.",
+  "@deleteScheduled": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteCancel": "Keep my account",
+  "deleteCancelled": "Deletion cancelled. Your account stays active.",
+  "galleryTitle": "Design system",
+  "checkInShowCode": "Show check-in code",
+  "checkInPassTitle": "Check-in pass",
+  "checkInPassInstruction": "Show this code at the venue. Staff confirm your identity, record any entry fee in person, and check you in.",
+  "checkInPassOffline": "Showing the copy saved on this device. Your status may be out of date.",
+  "checkInPassQrLabel": "Check-in QR code for {name}",
+  "@checkInPassQrLabel": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "checkInPassBrightness": "If the code won't scan, turn up your screen brightness.",
+  "checkInPassCode": "Code {code}",
+  "@checkInPassCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "checkInPassDone": "You're checked in.",
+  "checkedInAt": "Checked in at {time}",
+  "@checkedInAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "checkInClosesAt": "Check-in closes {time}",
+  "@checkInClosesAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "receiptsTitle": "Receipts",
+  "receiptPayment": "Paid {amount} · Receipt {reference}",
+  "@receiptPayment": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "receiptRefund": "Refunded {amount} · Receipt {reference}",
+  "@receiptRefund": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "featuredTitle": "Featured",
+  "carouselLabel": "Featured",
+  "homeBrowseBySport": "Browse by sport",
+  "homeLatestNews": "Latest news",
+  "homeNextUp": "Your next tournament",
+  "homeOpenNow": "Registration open",
+  "homeOpenNowSubtitle": "Places are going. Grab yours.",
+  "countdownStartsIn": "Starts in {time}",
+  "@countdownStartsIn": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "countdownClosesIn": "Closes in {time}",
+  "@countdownClosesIn": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "countdownToday": "Today",
+  "countdownLive": "Under way",
+  "durationDays": "{count, plural, =1{1 day} other{{count} days}}",
+  "@durationDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "durationHours": "{count} h",
+  "@durationHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "durationMinutes": "{count} min",
+  "@durationMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "capacityTaken": "{taken} of {max} places taken",
+  "@capacityTaken": {
+    "placeholders": {
+      "taken": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "capacityFull": "Full",
+  "statEntrants": "Entrants",
+  "statEntry": "Entry",
+  "statFormat": "Format",
+  "statStarts": "Starts",
+  "newsEmptyTitle": "No news yet",
+  "newsEmptyBody": "Announcements and tournament updates will appear here.",
+  "newsReadingTime": "{minutes} min read",
+  "@newsReadingTime": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "newsOpenTournament": "View tournament",
+  "newsCategoryAnnouncement": "Announcement",
+  "newsCategoryTournament": "Tournament",
+  "newsCategoryResults": "Results",
+  "newsCategoryCommunity": "Community",
+  "newsCategoryGuide": "Guide",
+  "newsArticleTitle": "Article",
+  "rankingsPodiumAwaiting": "Awaiting approved results",
+  "rankingsHowTitle": "How rankings work",
+  "rankingsHowVerifiedTitle": "Verified results only",
+  "rankingsHowVerifiedBody": "Points come only from results approved by a referee.",
+  "rankingsHowHistoryTitle": "Every point explained",
+  "rankingsHowHistoryBody": "Your history will show which match each point came from.",
+  "rankingsHowSeasonTitle": "Per discipline and season",
+  "rankingsHowSeasonBody": "Each discipline gets its own leaderboard for the season.",
+  "rankingsBySport": "Leaderboards",
+  "rankingsSportPending": "No approved results yet",
+  "artworkNote": "Illustration",
+  "profileStatTeams": "Teams",
+  "profileStatDisciplines": "Disciplines",
+  "profileStatEntries": "Active entries",
+  "profileStatPoints": "Points",
+  "prizesTitle": "Prizes",
+  "prizePlace": "Place {place}",
+  "@prizePlace": {
+    "placeholders": {
+      "place": {
+        "type": "int"
+      }
+    }
+  },
+  "prizeEstimated": "Estimated",
+  "prizeFinalized": "Finalized",
+  "prizeGuaranteed": "Guaranteed",
+  "prizeTba": "To be announced",
+  "prizeLabelsNote": "Estimated amounts can change. Guaranteed prizes are backed by sponsor money already received.",
+  "sponsorsTitle": "Sponsors",
+  "fixturesTitle": "Fixtures",
+  "fixturesEmpty": "Fixtures appear here after the draw.",
+  "fixturesBracket": "Bracket",
+  "fixturesMatches": "Matches",
+  "fixturesTable": "Table",
+  "fixturesGroup": "Group {name}",
+  "@fixturesGroup": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "fixturesRound": "Round {round}",
+  "@fixturesRound": {
+    "placeholders": {
+      "round": {
+        "type": "int"
+      }
+    }
+  },
+  "fixturesTbd": "To be decided",
+  "fixturesBye": "Bye",
+  "fixturesYourMatch": "Your match",
+  "fixturesFinalStandings": "Final standings",
+  "fixturesPointsTable": "Ranking points: {table}",
+  "@fixturesPointsTable": {
+    "placeholders": {
+      "table": {
+        "type": "String"
+      }
+    }
+  },
+  "fixturesNoPoints": "No ranking points are awarded in this tournament.",
+  "fixturesAdvance": "Top {count} go through",
+  "@fixturesAdvance": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tableP": "P",
+  "tableW": "W",
+  "tableD": "D",
+  "tableL": "L",
+  "tablePts": "Pts",
+  "matchTitle": "Match",
+  "matchStatusReady": "Ready to play",
+  "matchStatusPending": "Waiting for opponents",
+  "matchStatusCompleted": "Final",
+  "matchStatusCancelled": "Cancelled",
+  "matchStatusBye": "Bye",
+  "matchLive": "Result pending",
+  "matchSubmitResult": "Submit result",
+  "matchPendingMine": "Result sent: {score}. Waiting for the referee.",
+  "@matchPendingMine": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "matchPendingOther": "A result was sent: {score}. A referee will review it.",
+  "@matchPendingOther": {
+    "placeholders": {
+      "score": {
+        "type": "String"
+      }
+    }
+  },
+  "matchDispute": "Dispute this result",
+  "matchDisputeReason": "What is wrong with the result?",
+  "matchDisputeSent": "Dispute sent. A referee will review it.",
+  "matchDisputeOpen": "Your dispute is being reviewed by a referee.",
+  "matchDisputeWindow": "You can dispute within {hours} hours of approval.",
+  "@matchDisputeWindow": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "matchApprovedNote": "Approved by a referee.",
+  "resultOutcome": "How did it end?",
+  "outcomeNormal": "Played",
+  "outcomeWalkover": "Walkover",
+  "outcomeForfeit": "Forfeit",
+  "outcomeNoShow": "No-show",
+  "resultWinner": "Winner",
+  "resultWinnerTiebreak": "Level score? Choose who won the tiebreak.",
+  "resultUseSets": "Score by sets",
+  "resultSet": "Set {n}",
+  "@resultSet": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "resultAddSet": "Add set",
+  "resultSent": "Result sent to the referee.",
+  "resultNote": "Note (optional)",
+  "rankingsSeason": "This season",
+  "rankingsLifetime": "All time",
+  "rankingsEmptyTitle": "No points yet",
+  "rankingsEmptyBody": "Points appear once referees approve results in ranking tournaments.",
+  "rankingsNoTable": "No points table is published for this discipline yet. No points have been awarded.",
+  "rankingsPointsValue": "{points} pts",
+  "@rankingsPointsValue": {
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "rankingsWinsValue": "{count, plural, =1{1 win} other{{count} wins}}",
+  "@rankingsWinsValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rankingsYou": "You",
+  "pointsHistoryTitle": "Points history",
+  "pointsHistoryEmpty": "No points yet. Points come only from approved results in ranking tournaments.",
+  "pointsTotal": "Total points",
+  "awardMatchWin": "Match win",
+  "awardMatchDraw": "Draw",
+  "awardMatchLoss": "Match played",
+  "awardParticipation": "Participation",
+  "awardPlace": "Place {place}",
+  "@awardPlace": {
+    "placeholders": {
+      "place": {
+        "type": "int"
+      }
+    }
+  },
+  "awardReversal": "Correction",
+  "inboxNotificationsTitle": "Notifications",
+  "inboxUnread": "{count} unread",
+  "@inboxUnread": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "inboxUnreadLabel": "Unread",
+  "inboxMarkAllRead": "Mark all read",
+  "timeNow": "now",
+  "badgeEarned": "Earned",
+  "badgeLocked": "Locked",
+  "badgeProgress": "{current}/{target}",
+  "@badgeProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "badgeEarnedOn": "Earned {date}",
+  "@badgeEarnedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "badgesEarnedCount": "{earned} of {total} badges",
+  "@badgesEarnedCount": {
+    "placeholders": {
+      "earned": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "badgesExplainer": "Badges come only from approved results, final placements and venue check-ins.",
+  "notificationsEmptyTitle": "You're all caught up",
+  "notificationsEmptyBody": "Invitations, results, reminders and announcements will appear here.",
+  "settingsSafety": "Safety",
+  "policyTerms": "Terms of use",
+  "policyPrivacy": "Privacy policy",
+  "policyGuidelines": "Community guidelines",
+  "policyNotPublishedTitle": "Not published yet",
+  "policyNotPublishedBody": "The RIVALO team has not published this page yet. Check back soon.",
+  "policyPendingTitle": "Draft: pending legal review",
+  "policyPendingBody": "This text has not been reviewed by a lawyer yet and may change before RIVALO launches publicly.",
+  "policyTranslationPending": "Not translated yet. Showing the English text.",
+  "policyVersion": "Version {version} · {date}",
+  "@policyVersion": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "moreActions": "More",
+  "reportPlayerAction": "Report player",
+  "reportTeamAction": "Report team",
+  "reportAccountRequired": "Create a free account to report players or teams.",
+  "reportPlayerTitle": "Report {name}",
+  "@reportPlayerTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reportTeamTitle": "Report {name}",
+  "@reportTeamTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "reportAppTitle": "Report a problem or send feedback",
+  "reportAppIntro": "Tell the RIVALO team what went wrong or what would make the app better. We add your app version automatically.",
+  "reportPrivateNote": "Reports are private. We never tell the other player who reported them.",
+  "reportReasonHeader": "What is wrong?",
+  "reportReasonOffensiveName": "Offensive name",
+  "reportReasonOffensivePhoto": "Offensive photo or logo",
+  "reportReasonHarassment": "Harassment or threats",
+  "reportReasonCheating": "Cheating or fake results",
+  "reportReasonImpersonation": "Pretending to be someone else",
+  "reportReasonSpam": "Spam, scams or betting",
+  "reportReasonOther": "Something else",
+  "reportReasonAppProblem": "Something isn't working",
+  "reportReasonSuggestion": "Suggestion",
+  "reportDetailsLabel": "Details (optional)",
+  "reportDetailsLabelRequired": "Details",
+  "reportDetailsHint": "What happened, and when?",
+  "reportAppHint": "What were you doing when it happened?",
+  "reportChooseReason": "Choose what is wrong.",
+  "reportDetailsRequired": "Tell us briefly what happened.",
+  "reportSend": "Send report",
+  "reportSendFeedback": "Send",
+  "reportThanksTitle": "Thanks for telling us",
+  "reportThanksBody": "Our team will review it. You'll get a message in your inbox when they have.",
+  "reportFeedbackThanks": "Thanks for your feedback",
+  "reportFeedbackThanksBody": "The RIVALO team reads every message.",
+  "blockAction": "Block {name}",
+  "@blockAction": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "unblockAction": "Unblock {name}",
+  "@unblockAction": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "blockConfirmTitle": "Block {name}?",
+  "@blockConfirmTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "blockConfirmBody": "You won't find each other in search and can't invite each other to teams. They are not told. You can still play in the same tournaments.",
+  "blockButton": "Block",
+  "blockedToast": "{name} is blocked.",
+  "@blockedToast": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "unblockedToast": "{name} is unblocked.",
+  "@unblockedToast": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "blockedNotice": "You blocked this player.",
+  "blockedTitle": "Blocked players",
+  "blockedEmptyTitle": "No one blocked",
+  "blockedExplainer": "Blocked players don't see you in search and can't invite you to teams. They are not told.",
+  "unblockButton": "Unblock",
+  "tabStore": "Store",
+  "storeTitle": "Store",
+  "storeFeatured": "Featured",
+  "storeCatJerseys": "Jerseys",
+  "storeCatApparel": "Apparel",
+  "storeCatAccessories": "Accessories",
+  "storeCatEquipment": "Equipment",
+  "storeEmptyTitle": "Nothing here yet",
+  "storeEmptyBody": "Official RIVALO products will appear here.",
+  "storePriceFrom": "From {price}",
+  "@storePriceFrom": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "storeSoldOut": "Sold out",
+  "storeOnlyLeft": "{count, plural, =1{Only 1 left} other{Only {count} left}}",
+  "@storeOnlyLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "storeChooseSize": "Choose a size",
+  "storeOption": "Option",
+  "storeAbout": "About this item",
+  "storeAddToBag": "Add to bag",
+  "storeAddedToBag": "Added to your bag.",
+  "storeViewBag": "View bag",
+  "storeAccountRequired": "Create a free account to buy from the RIVALO store.",
+  "storeCashNotice": "Pay in cash when you collect your order or when it is delivered. There is no card payment in the app.",
+  "quantityLabel": "Quantity",
+  "quantityFor": "Quantity of {name}",
+  "@quantityFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "quantityDecrease": "Fewer",
+  "quantityIncrease": "More",
+  "bagTitle": "Bag",
+  "bagWithCount": "{count, plural, =1{Bag, 1 item} other{Bag, {count} items}}",
+  "@bagWithCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bagEmptyTitle": "Your bag is empty",
+  "bagEmptyBody": "Add jerseys, apparel or equipment from the store.",
+  "bagBrowse": "Browse the store",
+  "bagSubtotal": "Subtotal",
+  "bagCheckout": "Checkout",
+  "bagFixFirst": "Something in your bag changed. Update or remove it first.",
+  "bagOnlyLeft": "{count, plural, =0{Sold out} =1{Only 1 left: lower the quantity} other{Only {count} left: lower the quantity}}",
+  "@bagOnlyLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bagUnavailable": "No longer available",
+  "bagRemove": "Remove",
+  "checkoutTitle": "Checkout",
+  "checkoutPickup": "Pickup",
+  "checkoutDelivery": "Delivery",
+  "checkoutNoDelivery": "Delivery is not available yet. Choose pickup.",
+  "checkoutPickupWhere": "Where to collect",
+  "checkoutPickupFooter": "We tell you in your inbox when your order is ready.",
+  "checkoutDeliveryArea": "Delivery area",
+  "checkoutDeliveryFooter": "We deliver only to these areas. The fee is added to your total.",
+  "checkoutFree": "Free",
+  "checkoutRecipient": "Recipient name",
+  "checkoutPhone": "Phone number",
+  "checkoutAddress": "Address",
+  "checkoutAddressHelper": "Street, building, landmark. Only the store team sees it.",
+  "checkoutNote": "Note for the store (optional)",
+  "checkoutSummary": "Summary",
+  "checkoutDeliveryFee": "Delivery",
+  "checkoutTotal": "Total",
+  "checkoutPayOnPickup": "Pay in cash on pickup",
+  "checkoutPayOnDelivery": "Pay in cash on delivery",
+  "checkoutPayBody": "You pay {amount} in cash when you receive your order. Nothing is charged now.",
+  "@checkoutPayBody": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "checkoutChoosePickup": "Choose where to collect your order.",
+  "checkoutChooseArea": "Choose a delivery area.",
+  "checkoutDeliveryDetails": "Enter the name, phone number and address for delivery.",
+  "checkoutPlace": "Place order",
+  "ordersTitle": "My orders",
+  "ordersEmptyTitle": "No orders yet",
+  "ordersEmptyBody": "Orders you place in the store appear here.",
+  "ordersItems": "{count, plural, =1{1 item} other{{count} items}}",
+  "@ordersItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderStatusPlaced": "Placed",
+  "orderStatusConfirmed": "Confirmed",
+  "orderStatusReady": "Ready for pickup",
+  "orderStatusOutForDelivery": "Out for delivery",
+  "orderStatusCompleted": "Completed",
+  "orderStatusCancelled": "Cancelled",
+  "orderPlacedTitle": "Order placed",
+  "orderPlacedPickup": "We will tell you in your inbox when it is ready to collect. Pay in cash on pickup.",
+  "orderPlacedDelivery": "We will tell you in your inbox when it is on its way. Pay in cash on delivery.",
+  "orderPlacedOn": "Placed {date}",
+  "@orderPlacedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCancelledByYou": "You cancelled this order.",
+  "orderCancelledByStore": "The store cancelled this order.",
+  "orderItems": "Items",
+  "orderReturned": "{count} returned",
+  "@orderReturned": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "orderPayment": "Payment",
+  "orderPaid": "Paid in cash",
+  "orderRefunded": "Refunded",
+  "orderPartlyRefunded": "Paid · {amount} refunded",
+  "@orderPartlyRefunded": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "orderReceipt": "Receipt {reference}",
+  "@orderReceipt": {
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "orderCancel": "Cancel order",
+  "orderCancelTitle": "Cancel this order?",
+  "orderCancelBody": "The items go back on sale. You can order again later.",
+  "orderCancelled": "Order cancelled.",
+  "notifOrders": "Store orders",
+  "storeSoldBy": "Sold by {name}",
+  "@storeSoldBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "storeOfficialProduct": "Official RIVALO product",
+  "storeApprovedSeller": "Approved seller",
+  "storeSellerNote": "Sold by an approved seller. RIVALO keeps the stock, hands it over and takes the payment, so pickup, delivery and returns work as for official products.",
+  "storeShopsTitle": "Shops",
+  "storeShopProducts": "On sale",
+  "storeShopEmpty": "Nothing on sale right now",
+  "storeShopEmptyBody": "Check back soon.",
+  "storeShopUnavailableTitle": "This shop is not available",
+  "storeShopUnavailableBody": "It may be paused or closed.",
+  "sellTitle": "Sell on RIVALO",
+  "sellTeaser": "Run a sports shop or make gear? Apply to sell to RIVALO players.",
+  "sellAccountRequired": "Create a free account to apply to sell.",
+  "sellIntro": "Approved shops and makers can sell their products in the RIVALO store.",
+  "sellHowTitle": "How it works",
+  "sellHow1": "Apply here. RIVALO staff check who you are and sign an agreement with you, including the commission.",
+  "sellHow2": "Add your products in the Seller Hub on a computer. Staff review each one before it goes on sale.",
+  "sellHow3": "Bring your stock to RIVALO. We hand it to customers, take the cash and pay you what you earned, minus the commission.",
+  "sellApply": "Apply to sell",
+  "sellApplyAgain": "Apply again",
+  "sellApplyTitle": "Apply to sell",
+  "sellBusinessName": "Shop or business name",
+  "sellPhone": "Phone number",
+  "sellPhoneHelper": "Only RIVALO staff see it.",
+  "sellPhoneInvalid": "Enter a phone number (digits, spaces, + and - only).",
+  "sellCity": "City",
+  "sellCategories": "What would you sell?",
+  "sellCategoriesRequired": "Choose at least one.",
+  "sellDescription": "Tell us about your products",
+  "sellDescriptionHelper": "Brands, what you make, where you sell today.",
+  "sellDescriptionTooShort": "Write at least 20 characters.",
+  "sellLink": "Shop page or social profile (optional)",
+  "sellTermsNotice": "Before you apply, read how selling on RIVALO works.",
+  "sellReadTerms": "Selling on RIVALO: terms",
+  "sellSubmit": "Send application",
+  "sellSubmitted": "Application sent.",
+  "sellPendingPill": "Under review",
+  "sellPendingTitle": "Your application is being reviewed",
+  "sellPendingBody": "RIVALO staff will contact you about the seller agreement. You will get a message in your inbox when they decide.",
+  "sellSentOn": "Sent {date}",
+  "@sellSentOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "sellWithdraw": "Withdraw application",
+  "sellWithdrawConfirm": "Withdraw your application?",
+  "sellRejectedTitle": "Your last application was not approved",
+  "sellRejectedNoReason": "No reason was given. You can contact support from Settings.",
+  "sellClosedTitle": "Selling is not open yet",
+  "sellClosedBody": "RIVALO is not accepting new sellers right now.",
+  "sellApprovedTitle": "You sell on RIVALO as {shop}",
+  "@sellApprovedTitle": {
+    "placeholders": {
+      "shop": {
+        "type": "String"
+      }
+    }
+  },
+  "sellShopPaused": "Shop paused",
+  "sellShopClosed": "Shop closed",
+  "sellHubTitle": "Seller Hub",
+  "sellHubBody": "Manage your products, sales and statement in the Seller Hub. Sign in on a computer with your RIVALO account and your authenticator app.",
+  "sellHubAddress": "Seller Hub address",
+  "sellCopyAddress": "Copy address",
+  "sellCopied": "Address copied.",
+  "sellViewShop": "See your shop in the store"
+}

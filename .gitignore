@@ -1,0 +1,17 @@
+# Local tool settings
+/.claude/
+
+# Python caches (tools/translations)
+__pycache__/
+*.pyc
+
+# Secrets and local databases (also covered in backend/.gitignore)
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-journal
+
+# OS files
+.DS_Store
+Thumbs.db
